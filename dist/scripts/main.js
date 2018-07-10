@@ -17,7 +17,7 @@ function getElementById(element) {
 function sendMail(formInput) {
   if (typeof formInput === 'object') {
     try {
-      const endpoint = 'https://'; // provide endpoint url
+      const endpoint = 'https://agglspbbg5.execute-api.us-east-1.amazonaws.com/Prod/contact'; // provide endpoint url
       const lambdaRequest = new Request(endpoint, {
         method: 'POST',
         mode: 'no-cors',
