@@ -40,9 +40,9 @@ function sendMail(formInput) {
 // handle form submission
 document.querySelector('#contact-form').addEventListener('submit', function (e) {
   e.preventDefault();
-  const name = getElementById('name').value;
-  const email = getElementById('email').value;
-  const message = getElementById('message').value;
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const message = document.getElementById('message').value;
   const info = document.querySelector('.info');
   const formData = { name, email, message };
   if (sendMail(formData)) {
